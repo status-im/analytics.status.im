@@ -14,9 +14,9 @@ Why measure? See Android app example usage for impact, as well as organizational
 
 ![Android app usage](app_retention_example.png "Android app usage")
 
-![Monthly Active Contributors](mac.png "Monthly Active Contributors")
+![Monthly Active Contributors](mac_example.png "Monthly Active Contributors")
 
-![Monthly Contributor Retention Rate](mcrr.png "Monthly Contributor Retention Rate")
+![Monthly Contributor Retention Rate](mcrr_example.png "Monthly Contributor Retention Rate")
 
 ## Links
 
