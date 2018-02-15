@@ -48,3 +48,11 @@ TODO: -1 vs -2 trailing /
 
 scp blue:~/git-analytics/crypto/crypto-mac.csv .
 cat foo.csv | pbcopy
+
+## TODO
+
+- TODO: Make absolute time graph 2 MAC automated with right time period (no manual excel stuff)
+- TODO: Clone 10 biggest OSS git projects
+- TODO: Do MAC on biggest OSS like with Crypto OSS
+- TODO: Write script for automatically checking M3 retention
+- TODO: Do M3 retention check for Crypto/biggest OSS
