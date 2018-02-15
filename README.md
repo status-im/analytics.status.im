@@ -14,6 +14,8 @@ Why measure? See Android app example usage for impact, as well as organizational
 
 ![Monthly Active Contributors Crypto OSS](mac_crypto_oss.png "Monthly Active Contributors Crypto OSS")
 
+![Monthly Active Contributors Crypto OSS Absolute Recent](mac_crypto_oss_absolute_recent.png "Monthly Active Contributors Crypto OSS Absolute Recent")
+
 ## Images
 
 ![Android app usage](app_retention_example.png "Android app usage")
