@@ -12,8 +12,7 @@ Why measure? See Android app example usage for impact, as well as organizational
 
 ## Crypto OSS
 
-![Monthly Active Contributors Crypto OSS](mac_crypto_oss1.png "Monthly Active Contributors Crypto OSS")
-![Monthly Active Contributors Crypto OSS](mac_crypto_oss2.png "Monthly Active Contributors Crypto OSS")
+![Monthly Active Contributors Crypto OSS](mac_crypto_oss.png "Monthly Active Contributors Crypto OSS")
 
 ## Images
 
