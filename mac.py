@@ -4,6 +4,7 @@
 
 from dateutil import rrule
 import datetime
+import itertools
 import os
 import sets
 import subprocess
@@ -44,22 +45,37 @@ def contributors(since, until):
     output,err = p2.communicate()
     return filter(None, output.replace('\'', '').split('\n'))
 
-# TODO: multiple repos a la
-# ./mac.py ~/git/status-react/ ~/git/status-go/ then CSV
-git_repo = sys.argv[1]
-os.chdir(git_repo)
+repos = sys.argv[1:]
 
-git_name = git_repo.split("/")[-2]
-#start = sys.argv[2]
-#until = sys.argv[3]
-start = first_commit()
-until = "2018-01-01"
-print "MAC", git_name, start, "-", until
+# XXX: Hacky af
+index = 0
+repo_stats = []
+for git_repo in repos:
+    repo_stats.append([])
+    os.chdir(git_repo)
+    git_name = git_repo.split("/")[-2]
+    start = first_commit()
+    until = "2018-01-01"
 
-contributor_month = []
-for p in periods(start, until):
-    contributor_month.append(sets.Set(contributors(p[0], p[1])))
+    repo_stats[index].append(git_name + " (" + start + " - " + until + ")")
 
-for m in contributor_month:
-    print len(m)
+    contributor_month = []
+    for p in periods(start, until):
+        contributor_month.append(sets.Set(contributors(p[0], p[1])))
 
+    for m in contributor_month:
+        repo_stats[index].append(len(m))
+
+    index = index + 1
+
+for row in list(itertools.izip_longest(*repo_stats)):
+    csv_row = ""
+    for col in row:
+        if col == None:
+            cell = ""
+        else:
+            cell = str(col)
+        csv_row = csv_row + cell + ","
+    print csv_row
+
+# > ./mac.py ~/git/status-react/ ~/git/status-go/ > foo.csv
