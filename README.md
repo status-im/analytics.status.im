@@ -3,12 +3,24 @@
 Scripts, links and sheets to calculate important metrics.
 
 Right now:
+- Daily and weekly installs, updates, and net new installs
 - Monthly Active Contributors
 - Monthly Contributor Retention Rate
 
 Currently semi-manual and relying on Google Docs. At some point this will be scripted up and produced for general consumption. Only measures commits for status-react and some comparative-ish projects.
 
 Why measure? See Android app example usage for impact, as well as organizational design. For further information, see FB Growth video linked below.
+
+## User Analytics
+
+![Weekly Downloads (Appfigures)](downloads_weekly.png "Weekly Downloads (Appfigures)")
+![Daily Downloads (Appfigures)](downloads_daily "Daily Downloads (Appfigures)")
+
+![Weekly Updates (Appfigures)](updates_weekly.png "Weekly Updates (Appfigures)")
+![Daily Updates (Appfigures)](updates_daily.png "Daily Updates (Appfigures)")
+
+![Weekly New New Installs (Appfigures)](newnewinstalls_weekly.png "Weekly Net New Installs (Appfigures)")
+![Daily Net New Installs (Appfigures)](newnewinstalls_daily.png "Daily Net New Installs (Appfigures)")
 
 ## Crypto OSS
 
