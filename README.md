@@ -4,6 +4,7 @@ Scripts, links and sheets to calculate important metrics.
 
 Right now:
 - Daily and weekly installs, updates, and net new installs
+- Public Whisper chat message hourly and daily rates
 - Monthly Active Contributors
 - Monthly Contributor Retention Rate
 
@@ -21,6 +22,9 @@ Why measure? See Android app example usage for impact, as well as organizational
 
 ![Weekly New New Installs (Appfigures)](netnewinstalls_weekly.png "Weekly Net New Installs (Appfigures)")
 ![Daily Net New Installs (Appfigures)](netnewinstalls_daily.png "Daily Net New Installs (Appfigures)")
+
+![Daily Whisper Messages (Prometheus)](whisper_messages_daily.png "Daily Whisper Messages (Prometheus)")
+![Hourly Whisper Messages (Prometheus)](whisper_messages_hourly.png "Hourly Whisper Messages (Prometheus)")
 
 ## Crypto OSS
 
