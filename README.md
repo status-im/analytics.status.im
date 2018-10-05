@@ -1,19 +1,25 @@
 # Analytics for Status
 
-Scripts, links and sheets to calculate important metrics.
+Charts, scripts, links and sheets to calculate important metrics.
 
-Right now:
-- Daily and weekly installs, updates, and net new installs
-- Public Whisper chat message hourly and daily rates
-- Monthly Active Contributors
-- Monthly Contributor Retention Rate
 
-Currently semi-manual and relying on Google Docs. At some point this will be scripted up and produced for general consumption. Only measures commits for status-react and some comparative-ish projects.
 
-Why measure? See Android app example usage for impact, as well as organizational design. For further information, see FB Growth video linked below.
+- User Analytics
+  - [App Downloads](#app-downloads)
+  - [Messages](#messages)
+  - [ENS registrations](#ens-registrations)
+- Other analytics
+  - [Crypto OSS](#crypto-oss)
+  - [Big OSS](#big-oss)
+  - [Images](#images)
+  - [Links](#links)
+  - [Setup](#setup)
+
+
 
 ## User Analytics
 
+### App Downloads
 ![Weekly Downloads (Appfigures)](downloads_weekly.png "Weekly Downloads (Appfigures)")
 ![Daily Downloads (Appfigures)](downloads_daily.png "Daily Downloads (Appfigures)")
 
@@ -23,21 +29,35 @@ Why measure? See Android app example usage for impact, as well as organizational
 ![Weekly New New Installs (Appfigures)](netnewinstalls_weekly.png "Weekly Net New Installs (Appfigures)")
 ![Daily Net New Installs (Appfigures)](netnewinstalls_daily.png "Daily Net New Installs (Appfigures)")
 
+### Messages
+
 ![Daily Whisper Messages (Prometheus)](whisper_messages_daily.png "Daily Whisper Messages (Prometheus)")
 ![Hourly Whisper Messages (Prometheus)](whisper_messages_hourly.png "Hourly Whisper Messages (Prometheus)")
 
-## Crypto OSS
+### ENS registrations
+
+Coming soon
+
+## Other Analytics
+
+Currently semi-manual and relying on Google Docs. At some point this will be scripted up and produced for general consumption. Only measures commits for status-react and some comparative-ish projects.
+
+Why measure? See Android app example usage for impact, as well as organizational design. For further information, see FB Growth video linked below.
+
+### Crypto OSS
+
+
 
 ![Monthly Active Contributors Crypto OSS](mac_crypto_oss.png "Monthly Active Contributors Crypto OSS")
 
 ![Monthly Active Contributors Crypto OSS Absolute Recent](mac_crypto_oss_absolute_recent.png "Monthly Active Contributors Crypto OSS Absolute Recent")
 
-## Big OSS
+### Big OSS
 
 ![Monthly Active Contributors Big OSS (Log Scale)](mac_big_oss_log.png "Monthly Active Contributors Big OSS (Log Scale)")
 ![Monthly Active Contributors Big OSS (No Linux)](mac_big_oss_no_linux.png "Monthly Active Contributors Big OSS (No Linux)")
 
-## Images
+### Images
 
 ![Android app usage](app_retention_example.png "Android app usage")
 
@@ -47,7 +67,7 @@ Why measure? See Android app example usage for impact, as well as organizational
 
 ![Monthly Contributor Retention Rate](mcrr_example.png "Monthly Contributor Retention Rate")
 
-## Links
+### Links
 
 https://wiki.status.im/Status_Organisational_Design#Goals_of_Organisation
 
@@ -59,7 +79,7 @@ https://en.wikipedia.org/wiki/Cohort_analysis
 
 
 
-## SETUP
+### SETUP
 
 sudo apt-get install python-pip
 sudo pip install python-dateutil
