@@ -20,16 +20,29 @@ Charts, scripts, links and sheets to calculate important metrics.
 ## User Analytics
 
 ### App Downloads
-![Weekly Downloads (Appfigures)](downloads_weekly.png "Weekly Downloads (Appfigures)")
-![Daily Downloads (Appfigures)](downloads_daily.png "Daily Downloads (Appfigures)")
 
-![Weekly Updates (Appfigures)](updates_weekly.png "Weekly Updates (Appfigures)")
-![Daily Updates (Appfigures)](updates_daily.png "Daily Updates (Appfigures)")
+App download numbers are retrieved from the Status Appfigures account, which in turn is pulled from the Status Android Play Store account. Currently numbers are Android only, but iOS will be available after the App Store launch.
+
+#### Net New Installs
+
+New downloads minus uninstalls.
 
 ![Weekly New New Installs (Appfigures)](netnewinstalls_weekly.png "Weekly Net New Installs (Appfigures)")
 ![Daily Net New Installs (Appfigures)](netnewinstalls_daily.png "Daily Net New Installs (Appfigures)")
 
+#### New downloads
+
+![Weekly Downloads (Appfigures)](downloads_weekly.png "Weekly Downloads (Appfigures)")
+![Daily Downloads (Appfigures)](downloads_daily.png "Daily Downloads (Appfigures)")
+
+#### App Updates
+
+![Weekly Updates (Appfigures)](updates_weekly.png "Weekly Updates (Appfigures)")
+![Daily Updates (Appfigures)](updates_daily.png "Daily Updates (Appfigures)")
+
 ### Messages
+
+Message status are calculated by looking at message counts and unique addresses counts participating in a handful of public chats ([see channels that are covered](https://github.com/status-im/infra-eth-cluster/blob/master/ansible/roles/statusd-pubchats-bot/defaults/main.yml#L17)).
 
 ![Daily Whisper Messages (Prometheus)](whisper_messages_daily.png "Daily Whisper Messages (Prometheus)")
 ![Hourly Whisper Messages (Prometheus)](whisper_messages_hourly.png "Hourly Whisper Messages (Prometheus)")
@@ -86,20 +99,20 @@ sudo pip install python-dateutil
 
 TODO: -1 vs -2 trailing /
 
-# TODO: Should just work in dir and go everywhere there
+#### TODO: Should just work in dir and go everywhere there
 ./mac.py ~/git-analytics/crypto/bitcoin/ ~/git-analytics/crypto/ccxt/ ~/git-analytics/crypto/go-ethereum/ ~/git-analytics/crypto/litecoin/ ~/git-analytics/crypto/lnd/ ~/git-analytics/crypto/mist/ ~/git-analytics/crypto/parity/ ~/git-analytics/crypto/solidity/ ~/git-analytics/crypto/status-react/ ~/git-analytics/crypto/web3.js/ > crypto-mac.csv
 
 scp blue:~/git-analytics/crypto/crypto-mac.csv .
 cat foo.csv | pbcopy
 
-## TODO
+#### TODO
 
 - TODO: Make absolute time graph 2 MAC automated with right time period (no manual excel stuff)
 - TODO: Do MAC on biggest OSS like with Crypto OSS
 - TODO: Write script for automatically checking M3 retention
 - TODO: Do M3 retention check for Crypto/biggest OSS
 
-## Crypto OSS
+#### Crypto OSS
 
 oskarth@blue:~/git-analytics$ cat crypto-list.txt
 https://github.com/bitcoin/bitcoin.git
@@ -114,7 +127,7 @@ https://github.com/paritytech/parity.git
 https://github.com/ethereum/solidity.git
 https://github.com/status-im/status-react.git
 
-## Big OSS
+#### Big OSS
 
 https://github.com/search?q=stars:%3E1&s=stars&type=Repositories
 
