@@ -46,6 +46,7 @@ Message status are calculated by looking at message counts and unique addresses 
 
 ![Daily Whisper Messages (Prometheus)](whisper_messages_daily.png "Daily Whisper Messages (Prometheus)")
 ![Hourly Whisper Messages (Prometheus)](whisper_messages_hourly.png "Hourly Whisper Messages (Prometheus)")
+![Daily Whisper Users (Prometheus)](whisper_distinct_users_daily.png "Daily Whisper Users (Prometheus)")
 
 ### ENS registrations
 
