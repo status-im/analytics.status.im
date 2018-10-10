@@ -1,0 +1,33 @@
+title: Analytics
+subtitle: "Public data for everyone!"
+description: "Data gathering and analysis on public blockchains is a very different beast. Learn how we do it here!"
+author: Analytics
+language: en
+timezone: UTC
+
+url: https://analytics.status.im/
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+per_page: 0
+
+theme: navy
+deploy:
+  type: git
+  branch: gh-pages
+  name: status-im-auto
+  repo: git@github.com:status-im/analytics.status.im.git
+
+theme_config:
+    favicon: img/logo-32.png
+
+highlight:
+  enable: true
+  line_number: false
+
+disqus_shortname: hexojs
+twitter: ethstatus
+github: staus-im

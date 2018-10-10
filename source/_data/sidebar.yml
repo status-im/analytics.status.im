@@ -1,0 +1,10 @@
+docs:
+  Analytics:
+    introduction: index.html
+    app_downloads: app_downloads.html
+    messages: messages.html
+    ens_registration: ens_registration.html
+    crypto_oss: crypto_oss.html
+    oss: oss.html
+    run_it_yourself: run_it_yourself.html
+    
