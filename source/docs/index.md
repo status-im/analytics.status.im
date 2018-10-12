@@ -3,13 +3,11 @@ id: index
 title: Better Data For Everyone
 ---
 
-Status is an ambitious project.
+# Status is an ambitious project.
 
-As we’ve grown to a team of 90+ individuals scattered across the world, it’s become increasingly important to align people around near-term goals that keep us moving toward our greater vision of a decentralized web. 
+As we’ve grown to a team of 100+ individuals scattered across the world, it’s become increasingly important to align people around near-term goals that keep us moving toward our greater vision of a decentralized web. 
 
-To keep ourselves on task, we set OKRs—measurable quarterly goals. And to measure those, we took a classic page out of the web 2.0 playbook and introduced product tracking.
-
-Here is where we hang our heads in shame, but first a backstory:
+So, some backstory first:
 
 ---
 
