@@ -1,3 +1,8 @@
+# Moved to [https://status.im/analytics/](https://status.im/analytics/)
+
+This page is no longer maintained.
+
+
 # Analytics for Status
 
 Charts, scripts, links and sheets to calculate important metrics.
