@@ -1,0 +1,21 @@
+.o-list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin-top: get-stack-spacing(m);
+  }
+}
+
+// Row List
+.o-list--row {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .o-list__item {
+    margin-top: 0;
+    margin-left: get-inline-spacing(m);
+  }
+}

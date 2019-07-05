@@ -1,0 +1,11 @@
+.o-constrained {
+  max-width: $max-wrapper-width;
+  margin: 0 auto;
+  padding-left: $prevent-spacing;
+  padding-right: $prevent-spacing;
+}
+
+.o-center {
+  margin-left: auto;
+  margin-right: auto;
+}

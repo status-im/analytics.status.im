@@ -1,0 +1,34 @@
+.c-navigation {
+  &__item {
+    padding: get-inset-spacing(m);
+    color: get-font(color);
+    font-weight: 500;
+
+    &:before {
+      content: '';
+      height: 20px;
+      left: - get-inset-spacing(m) / 2;
+      position: absolute;
+      top: 50%;
+      width: 1px;
+      background: $global-border-color;
+      transform: translateY(-50%);
+    }
+
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    &:hover,
+    &.is-active {
+      background-color: get-brand(primaryGradation);
+      box-shadow: inset 0 -2px 0 get-brand(primary);
+      color: get-brand(primary);
+    }
+    &.is-active {
+      font-weight: bold;
+    }
+  }
+}
