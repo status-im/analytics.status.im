@@ -1,15 +1,13 @@
 .c-fluid-media {
-  position: relative;
-  padding-bottom: calc(100vh - 64px - 55px);
-  height: 0;
-  overflow: hidden;
+  overflow: auto;
 
   iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0px !important;
+    height: 860px;
+    width: 1000px;
+
+    @include respond(xxLarge) {
+      height: 1200px;
+      width: 1400px;
+    }
   }
 }

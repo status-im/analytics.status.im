@@ -5,6 +5,10 @@
 
   &__item {
     margin-top: get-stack-spacing(m);
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 

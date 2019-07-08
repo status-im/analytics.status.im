@@ -1,8 +1,70 @@
 .c-navigation {
+  display: none;
+  left: 0;
+  height: 100vh;
+  margin-top: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: white;
+  font-size: 2rem;
+
+  @include respond(xLarge) {
+    display: block;
+    height: auto;
+    overflow: none;
+    position: static;
+    width: auto;
+    background: transparent;
+    font-size: get-font(size);
+  }
+
+  &.is-active {
+    display: block;
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: get-inset-spacing(m);
+    border-bottom: 1px solid $global-border-color;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @include respond(xLarge) {
+      display: none;
+    }
+  }
+
+  &__body {
+    @include respond(xLarge) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include respond(xxLarge) {
+      display: flex;
+      flex-direction: row;
+      grid-template-columns: initial;
+    }
+  }
+
+  &__trigger {
+    height: 24px;
+    width: 24px;
+  }
+
   &__item {
     padding: get-inset-spacing(m);
     color: get-font(color);
     font-weight: 500;
+
+    @include respond(large) {
+      margin-top: 0;
+    }
 
     &:before {
       content: '';
@@ -30,5 +92,11 @@
     &.is-active {
       font-weight: bold;
     }
+  }
+}
+
+.c-navigation-trigger {
+  @include respond(xLarge) {
+    display: none;
   }
 }

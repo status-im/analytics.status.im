@@ -1,5 +1,16 @@
 <footer role="contentinfo">
 
 </footer>
+
+<script>
+  var el = document.querySelector('.js-navigation-trigger');
+  var elBody = document.querySelector('.js-navigation');
+
+  el.onclick = function(event) {
+    event.preventDefault();
+    elBody.classList.toggle('is-active');
+  }
+</script>
+
 </body>
 

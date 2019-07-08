@@ -1,15 +1,17 @@
 .o-header {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: get-stack-spacing(xl);
-  padding: get-inset-spacing(m) get-inset-spacing(m) 0;
+  padding: get-inset-spacing(m);
 
+  @include respond(xLarge) {
+    flex-direction: column;
+  }
   @include respond(xxLarge) {
     flex-direction: row;
-    justify-content: space-between;
     padding: 0 get-inset-spacing(m);
   }
 
