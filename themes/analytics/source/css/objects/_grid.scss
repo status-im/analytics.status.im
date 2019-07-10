@@ -9,3 +9,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.o-distance {
+  margin-top: 12px;
+}
+
+.o-fullview {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 119px);
+  justify-content: center;
+}

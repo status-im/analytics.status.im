@@ -7,7 +7,7 @@
   margin-bottom: get-stack-spacing(xl);
   padding: get-inset-spacing(m);
 
-  @include respond(xLarge) {
+  @include respond(large) {
     flex-direction: column;
   }
   @include respond(xxLarge) {

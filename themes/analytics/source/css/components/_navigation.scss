@@ -7,17 +7,23 @@
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: get-index(navigation);
   background: white;
   font-size: 2rem;
 
-  @include respond(xLarge) {
+  @include respond(large) {
     display: block;
     height: auto;
     overflow: none;
+    margin-top: get-stack-spacing(m);
     position: static;
     width: auto;
     background: transparent;
     font-size: get-font(size);
+    text-align: center;
+  }
+  @include respond(xxLarge) {
+    margin-top: 0;
   }
 
   &.is-active {
@@ -34,18 +40,18 @@
     font-weight: bold;
     text-transform: uppercase;
 
-    @include respond(xLarge) {
+    @include respond(large) {
       display: none;
     }
   }
 
   &__body {
-    @include respond(xLarge) {
+    @include respond(large) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    @include respond(xxLarge) {
+    @include respond(xLarge) {
       display: flex;
       flex-direction: row;
       grid-template-columns: initial;
@@ -66,19 +72,19 @@
       margin-top: 0;
     }
 
-    &:before {
+    &:after {
       content: '';
       height: 20px;
-      left: - get-inset-spacing(m) / 2;
       position: absolute;
+      right: 0;
       top: 50%;
       width: 1px;
       background: $global-border-color;
       transform: translateY(-50%);
     }
 
-    &:first-child {
-      &:before {
+    &:last-child {
+      &:after {
         display: none;
       }
     }
@@ -96,7 +102,7 @@
 }
 
 .c-navigation-trigger {
-  @include respond(xLarge) {
+  @include respond(large) {
     display: none;
   }
 }
