@@ -11,3 +11,15 @@
     }
   }
 }
+
+.c-fluid-media--small {
+  iframe {
+    height: 700px;
+    width: 800px;
+
+    @include respond(xxLarge) {
+      height: 800px;
+      width: 1000px;
+    }
+  }
+}
