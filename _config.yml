@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Status - Status Analytics
-description: It is
+title: Status Network Token Analytics Dashboard
+description: The Status Network Token (SNT) Analytics Dashboard takes publicly available, on chain data and organizes it into a simple view. This helps monitor adoption of each SNT use case over time.
 author: Status Research & Development GmbH
 
 language: [en]

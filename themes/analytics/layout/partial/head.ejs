@@ -8,32 +8,29 @@
   <link rel="canonical" href="<%= url %>">
 
   <!-- Icon -->
-  <meta name="msapplication-TileColor" content="#080E1A">
-  <link rel="icon" type="image/png" href="<%= url_for('images/favicon-16.png') %>" sizes="16x16" />
-  <link rel="icon" type="image/png" href="<%= url_for('images/favicon-32.png') %>" sizes="32x32" />
+  <meta name="msapplication-TileColor" content="#DFE3FB">
+  <link rel="icon" type="image/png" href="<%= url_for('images/favicon-16x16.png') %>" sizes="16x16" />
+  <link rel="icon" type="image/png" href="<%= url_for('images/favicon-32x32.png') %>" sizes="32x32" />
 
-  <link rel="apple-touch-icon" sizes="76x76" href="<%= url_for('images/apple-touch-icon-60x60-precomposed.png') %>">
-  <link rel="apple-touch-icon" sizes="76x76" href="<%= url_for('images/apple-touch-icon-76x76-precomposed.png') %>">
-  <link rel="apple-touch-icon" sizes="120x120" href="<%= url_for('images/apple-touch-icon-120x120-precomposed.png') %>">
-  <link rel="apple-touch-icon" sizes="152x152" href="<%= url_for('images/apple-touch-icon-152x152-precomposed.png') %>">
-  <link rel="apple-touch-icon" sizes="180x180" href="<%= url_for('images/apple-touch-icon-precomposed.png') %>">
-  <link rel="apple-touch-icon" href="<%= url_for('images/apple-touch-icon-precomposed.png') %>">
-
-  <meta property="og:site_name" content="Status">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= url_for('images/apple-touch-icon.png') %>">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:site_name" content="Status Network Token Analytics Dashboard">
+  <meta property="og:description" content="<% if (page.description) { %><%= __(page.description) %> | <% } %><%= __(config.description) %>">
   <meta property="og:type" content="website">
   <meta property="og:title" content="<% if (page.title) { %><%= __(page.title) %> | <% } %><%= __(config.title) %>">
-
-  <meta property="og:image" content="<%= url_for('images/share.png')%>">
+  <meta property="og:image" content="<%= url_for('images/share.jpg')%>">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="628">
+
+  <meta name="twitter:title" content="<% if (page.title) { %><%= __(page.title) %> | <% } %><%= __(config.title) %>">
+  <meta name="twitter:description" content="<% if (page.description) { %><%= __(page.description) %> | <% } %><%= __(config.description) %>">
+  <meta name="twitter:image" content="<%= url_for('images/share.jpg')%>">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- CSS -->
   <%- css('css/application') %>
   <!-- endbuild -->
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-
-  <meta property="og:image" content="/img/share.png?v=0.0.5" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.4/styles/dracula.min.css">
 </head>
 <body>
