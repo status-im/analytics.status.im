@@ -31,10 +31,6 @@ per_page: 0
 ## Themes: https://hexo.io/themes/
 theme: analytics
 
-autoprefixer:
-  enable: true
-  browsers:
-    - 'last 2 versions'
 node_sass:
   outputStyle: nested
   precision: 5

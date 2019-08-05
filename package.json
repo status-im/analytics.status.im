@@ -23,5 +23,11 @@
     "hexo-renderer-sass": "^0.4.0",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }

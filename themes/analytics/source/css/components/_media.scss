@@ -17,8 +17,12 @@
     height: 700px;
     width: 800px;
 
+    @include respond(xLarge) {
+      height: 100vh;
+    }
+
     @include respond(xxLarge) {
-      height: 750px;
+      height: 100vh;
       width: 830px;
     }
   }
