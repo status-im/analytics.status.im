@@ -1,24 +1,31 @@
-var ghpages = require('gh-pages')
+const { promisify } = require('util')
+const { publish } = require('gh-pages')
+const ghpublish = promisify(publish)
 
+/* fix for "Unhandled promise rejections" */
+process.on('unhandledRejection', err => { throw err })
+
+const branch = 'gh-pages'
 /* use SSH auth by default */
-let repoUrl = 'git@github.com:status-im/analytics.status.im.git'
+let url = 'git@github.com:status-im/analytics.status.im.git'
 
 /* alternative is to use github used and API token */
 if (process.env.GH_USER != undefined) {
-  let repoUrl = ( 
+  url = ( 
     'https://' + process.env.GH_USER + ':' + process.env.GH_TOKEN
     + '@github.com/status-im/analytics.status.im.git'
   )
 }
- 
-ghpages.publish('public', {
-  repo: repoUrl,
-  branch: 'gh-pages',
-  dotfiles: true,
-  silent: false
-}, function(err) {
-  if (err !== undefined) {
-    console.error(err)
-    throw err
-  }
-})
+
+const main = async (url, branch)=> {
+  console.log(`Pushing to: ${url}`)
+  console.log(`On branch: ${branch}`)
+  await ghpublish('public', {
+    repo: url,
+    branch: branch,
+    dotfiles: true,
+    silent: false
+  })
+}
+
+main(url, branch)
