@@ -18,13 +18,11 @@
     width: 800px;
 
     @include respond(xLarge) {
-      height: 100vh;
-      margin-top: -100px;
+      height: calc(100vh - 180px);
     }
 
     @include respond(xxLarge) {
       height: 900px;
-      margin-top: -50px;
       width: 1000px;
     }
   }
