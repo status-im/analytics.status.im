@@ -425,12 +425,10 @@ h6 {
   width: 800px; }
   @media screen and (min-width: 1023px) {
     .c-fluid-media--small iframe {
-      height: 100vh;
-      margin-top: -100px; } }
+      height: calc(100vh - 180px); } }
   @media screen and (min-width: 1400px) {
     .c-fluid-media--small iframe {
       height: 900px;
-      margin-top: -50px;
       width: 1000px; } }
 
 .icon {
