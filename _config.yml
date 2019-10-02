@@ -6,6 +6,7 @@
 title: Status Network Token Analytics Dashboard
 description: The Status Network Token (SNT) Analytics Dashboard takes publicly available, on chain data and organizes it into a simple view. This helps monitor adoption of each SNT use case over time.
 author: Status Research & Development GmbH
+overview_url: https://app.powerbi.com/view?r=eyJrIjoiOTYyMTQyZjMtZTM5ZS00MWE3LTkzYjktMzFiM2U3MTg3YzAxIiwidCI6ImYyOGNmN2E5LTk2NmYtNGRiNC04N2MwLWZhMjlmMzliYzMzOSIsImMiOjl9
 
 language: [en]
 locale: en
