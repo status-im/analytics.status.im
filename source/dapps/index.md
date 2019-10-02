@@ -1,4 +1,4 @@
 title: Dap.ps
-layout: empty
-iframe: https://app.powerbi.com/view?r=eyJrIjoiMmE5ZWQwNTQtODBhYS00NDEwLWI1NDctOWFhZTc3Njg3Yzk3IiwidCI6ImYyOGNmN2E5LTk2NmYtNGRiNC04N2MwLWZhMjlmMzliYzMzOSIsImMiOjl9&pageName=ReportSection9c75f0d739e3b6e06518&pageName=ReportSection255d9a81cd8a7502d3bb
+layout: dashboard
+iframe: https://app.powerbi.com/view?r=eyJrIjoiYjBkMzA4ZTEtZjljNC00MjBhLWEyZmYtMDFkYjI5YmZkNTk1IiwidCI6ImYyOGNmN2E5LTk2NmYtNGRiNC04N2MwLWZhMjlmMzliYzMzOSIsImMiOjl9
 ---
